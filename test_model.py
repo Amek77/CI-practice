@@ -6,7 +6,7 @@ y=np.array([2,4,6,8])
 
 def test_coefficient():
     model=LinearRegression()
-    model.fix(X,y)
+    model.fit(X,y)
     assert round(model.coef_[0],2)==2.0
 
 def test_intercept():
